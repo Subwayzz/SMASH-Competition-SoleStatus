@@ -44,8 +44,41 @@
     <header class="text-center my-5">
         <h1>Contact Us</h1>
         <p class="lead">We would love to hear from you!</p>
-    <header>
+        <p>If you have any questions, feedback, or inquiries, please reach out to us using the form below.</p>
+    </header>
 
+    <main class="container my-5">
+  <div class="accordion" id="contactAccordion">
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingEmail">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEmail" aria-expanded="true" aria-controls="collapseEmail">
+           Email Us
+        </button>
+      </h2>
+      <div id="collapseEmail" class="accordion-collapse collapse show" aria-labelledby="headingEmail" data-bs-parent="#contactAccordion">
+        <div class="accordion-body">
+          <p>You can reach us at: <a href="mailto:putanemail@soulstatus.org">putanemail@soulstatus.org</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingPhone">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePhone" aria-expanded="false" aria-controls="collapsePhone">
+           Call Us
+        </button>
+      </h2>
+      <div id="collapsePhone" class="accordion-collapse collapse" aria-labelledby="headingPhone" data-bs-parent="#contactAccordion">
+        <div class="accordion-body">
+          <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
+          <p>Available: Mon–Fri, 9AM–5PM PST</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
         <!--Navigation Bar-->
         <ul class="nav">
             <li class="nav-item">
