@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
 
-
+h2 {
+    text-align: center;
+}
 .carousel-item {
     text-align: center;
     display: flex;
