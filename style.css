@@ -5,6 +5,10 @@ html, body {
     margin: 0;
 }
 
+header.bg-light {
+    padding: 80px 0 !important; /* Top and bottom padding */
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -91,4 +95,54 @@ h2 {
 
 #welcome {
     background-color: rgb(156, 186, 152);
+}
+
+.product-image-main {
+    width: 400px;
+    height: auto;
+    max-width: none;
+    box-shadow: none !important;
+    border-radius: 0;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Override Bootstrap shadow class */
+.shadow-none {
+    box-shadow: none !important;
+}
+
+/* Button styling - light green with black text */
+.btn, .btn-primary, .btn-secondary, .btn-outline-secondary {
+    background-color: seagreen !important; /* Light green */
+    border-color: #68dc68 !important;
+    color: black !important;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    
+}
+
+/* Button hover state - dark green with white text */
+.btn:hover, .btn-primary:hover, .btn-secondary:hover, .btn-outline-secondary:hover {
+    background-color: #228B22 !important; /* Dark green */
+    border-color: #228B22 !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Focus and active states */
+.btn:focus, .btn:active, .btn-primary:focus, .btn-primary:active,
+.btn-secondary:focus, .btn-secondary:active, 
+.btn-outline-secondary:focus, .btn-outline-secondary:active {
+    background-color: #228B22 !important;
+    border-color: #228B22 !important;
+    color: white !important;
+    box-shadow: 0 0 0 0.2rem rgba(144, 238, 144, 0.5) !important;
+}
+
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
 }
