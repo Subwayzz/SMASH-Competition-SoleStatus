@@ -6,7 +6,8 @@ html, body {
 }
 
 header.bg-light {
-    padding: 80px 0 !important; /* Top and bottom padding */
+    padding: 80px !important; /* Top and bottom padding */;
+
 }
 
 body {
@@ -145,4 +146,135 @@ h2 {
 section h2 {
     text-align: center;
     margin-bottom: 30px;
+}
+
+
+/* Footer layout restructure */
+footer {
+    background-color: #3A5A40;
+    color: white;
+    text-align: left; /* Change from center to left */
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Footer sections alignment */
+.footer-logo-section {
+    text-align: left;
+}
+
+.footer-links-section {
+    text-align: center;
+}
+
+.footer-team-section {
+    text-align: right;
+}
+
+/* Logo styling */
+.footer-logo-section img {
+    width: 50%;
+    height: auto;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-links-section h6 {
+    margin-bottom: 15px;
+}
+
+.footer-links-section ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-team-section h6 {
+    margin-bottom: 10px;
+}
+
+.footer-copyright {
+    text-align: center !important;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+@media (max-width: 768px) {
+    .footer-logo-section,
+    .footer-links-section,
+    .footer-team-section {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+#welcome {
+    background-color: rgb(156, 186, 152);
+    padding-bottom: 25px !important;
+}
+
+/* Information page styling */
+.info-page ul {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #3A5A40;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    list-style-position: inside;
+    text-align: center;
+    background-color:whitesmoke;
+}
+
+.info-page ul li {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+/* Alternative: Individual section styling */
+main h3 + ul {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 25px;
+    border: 2px solid #228B22;
+    border-radius: 12px;
+    background-color: rgba(144, 238, 144, 0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    list-style-position: inside;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+/* Section headers styling */
+main h3 {
+    text-align: center;
+    color: #3A5A40;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+/* List items styling */
+main ul li {
+    margin: 12px 0;
+    padding: 8px;
+    font-size: 1.1em;
+    line-height: 1.4;
+    background-color:whitesmoke;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    main h3 + ul {
+        max-width: 90%;
+        padding: 20px;
+        margin: 15px auto;
+    }
+}
+
+#productCarousel .carousel-item img {
+    max-width: 80%;
+    height: 700px; /* Set fixed height for all images */
+    object-fit: contain; /* Maintains aspect ratio without cropping */
+    display: block;
+    margin: 0 auto;
 }
